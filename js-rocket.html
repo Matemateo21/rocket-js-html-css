@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first rocket</title>
+    <script src="js-rocket.js"></script>
+    <link rel="stylesheet" href="js-rocket.css">
+
+</head>
+
+<body class="body-state1">
+
+    <!-- LEFT PART OF THE SCREEN -->
+    <div class="left">
+
+        <div class="interface state1">
+            <h1>JS Rocket Launch</h1>
+            <a href="#" class="button" onclick="changeToState(2)">Launch! </a>
+        </div>
+
+        <div class="interface state2">
+            <h1 id="countdown">10</h1>
+            <a href="#" class="button" onclick="changeToState(1)">Stop it! Catastrophy is close!!!! </a>
+        </div>
+
+        <div class="interface state3">
+            <h1>Lift OFF</h1>
+
+        </div>
+
+        <div class="interface state4">
+            <h1>Well DONE !</h1>
+            <a href="#" class="button" onclick="changeToState(1)">Do it again! </a>
+        </div>
+
+        <div class="interface state5">
+            <h1>Oh NO!!!!</h1>
+            <a href="#" class="button" onclick="changeToState(1)">Start again</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- RIGHT PART OF THE SCRREEN -->
+    <div class="right">
+        <div class="ground"></div>
+        <div class="rocket"></div>
+        <div class="nervous" id="showNervous"></div>
+        <div class="cant-wait" id="showCantWait"></div>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

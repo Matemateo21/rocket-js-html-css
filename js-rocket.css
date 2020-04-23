@@ -1,0 +1,144 @@
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.left {
+    background-image:linear-gradient(rgb(255, 251, 0), aqua) ;
+    position: fixed; 
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+    display: none;
+}
+
+body.body-state1 .state1 {display: block;}
+body.body-state2 .state2 {display: block;}
+body.body-state3 .state3 {display: block;}
+body.body-state4 .state4 {display: block;}
+body.body-state5 .state5 {display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right {
+    background-image:linear-gradient(rgb(56, 47, 177),rgb(175, 220, 231) ) ;
+    position: fixed; 
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.rocket {
+ position: absolute;
+ left: 50%;
+ bottom: -10px;
+ width: 143px;
+ margin-left: -71.5px;
+ height: 272px;
+ background: url('rocket-state1.png') no-repeat 0 0  ;
+ transition: bottom 3000ms;
+}
+h1 {
+    color: gray;
+}
+.body-state1 .rocket{
+    transition: none;
+}
+.body-state2 .rocket{
+    background: url('rocket-state2.gif');
+}
+.body-state3 .rocket {
+    background: url('rocket-state3.gif');
+}
+.body-state4 .rocket {
+    background: url('rocket-state3.gif');
+}
+.body-state5 .rocket {
+    background: url('boom.png');
+    width: 209px;
+    height: 200px;
+    margin-left: -104.50px;
+}
+.body-state3 .rocket,
+.body-state4 .rocket{
+    bottom: 1000px; 
+}
+.ground {
+    background-image: url('ground.png');
+    
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    bottom: 10px;
+    
+
+}
+.nervous {
+  position: absolute;
+  bottom: 220px;
+  left: 50%;
+  margin-left: -180px;
+  background: url('nervous.png') no-repeat 0 0;
+  width: 223px;
+  height: 100px;
+  display: none;
+
+}
+
+.cant-wait {
+    position: absolute;
+  bottom: 180px;
+  left: 50%;
+  /* CHANGE THIS IMAGE */
+
+  background: url('cant-wait.png') no-repeat 0 0;
+  width: 223px;
+  height: 100px;
+  display: none;
+}
+.nervous.show,
+.cant-wait.show {
+    display: block;
+}
+.interface {
+   
+    
+    
+margin-top: 200px;
+    text-align: center;
+   
+    padding: 10px 20px;
+
+}
+
+a.button {
+    display: inline-block;
+    background-color: lightsalmon;
+    color: black;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: color 300ms;
+}
+a:hover {
+color: brown;
+}
